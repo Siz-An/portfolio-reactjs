@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Home = () => {
   return (
-    <div name="Home" className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 ">
+    <div name="home" className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 ">
       <div className='max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row'>
         <div>
           <h2 className='text-4xl sm:text-7xl font-bold text-white'>I'am a Full-Stack <span className='text-blue-800 font-nonsig'>Developer</span> </h2>
@@ -13,6 +13,7 @@ const Home = () => {
             a culpa quam quod accusantium reprehenderit perspiciatis omnis, 
             consectetur ratione debitis numquam nihil velit eius eligendi. Iure, quidem odio.
             </p>
+            <p className='text-gray-700 py-4 max-w-md'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure repudiandae officia necessitatibus labore ipsam sapiente odit accusantium autem mollitia atque.</p>
             <div>
               <button className='group text-white font-signature w-fit px-4 py-2 flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md'>
                 PortFolio 
