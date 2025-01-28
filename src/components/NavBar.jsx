@@ -13,11 +13,15 @@ function NavBar() {
         { id: 5, link: 'contact' },
     ];
 
+    const handleLinkClick = () => {
+        setNav(false); // Close the menu on link click
+    };
+
     return (
-        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
+        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50 italic">
             {/* Logo Section */}
             <div className="logo">
-                <h1 className="text-5xl font-signature ml-2">Portfolio</h1>
+                <h1 className="text-5xl font-signature ml-2">Sijan Mahato</h1>
             </div>
 
             {/* Desktop Links */}
@@ -31,7 +35,7 @@ function NavBar() {
                             to={link}
                             smooth={true}
                             duration={500}
-                            offset={-40} // Reduced offset for smaller gap
+                            offset={-40} // Adjust offset for header gap
                         >
                             {link}
                         </Link>
@@ -54,13 +58,13 @@ function NavBar() {
                         <li
                             key={id}
                             className="px-4 cursor-pointer capitalize py-6 text-2xl hover:text-white hover:scale-105 duration-150"
-                            onClick={() => setNav(false)} // Close menu on click
                         >
                             <Link
                                 to={link}
                                 smooth={true}
                                 duration={500}
-                                offset={-60} // Reduced offset for smaller gap
+                                offset={-60} // Adjust offset for header gap
+                                onClick={handleLinkClick} // Close menu on click
                             >
                                 {link}
                             </Link>

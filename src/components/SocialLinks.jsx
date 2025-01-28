@@ -49,14 +49,14 @@ export default function SocialLinks() {
                     Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '/Sizan-PHP.pdf',
+            href: '/Backend-Sijan.pdf',
             style: 'rounded-br-md',
             download: true,
         },
     ];
 
     return (
-        <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+        <div className="hidden lg:flex flex-col top-[35%] left-0 fixed italic">
             <ul>
                 {links.map(({ id, child, href, style, download }) => (
                     <li

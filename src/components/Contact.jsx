@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
   return (
   
-<div name="contact" className="flex justify-center items-center min-h-screen bg-gradient-to-b from-black to-gray-800 ">
+<div name="contact" className="flex justify-center items-center min-h-screen bg-gradient-to-b from-black to-gray-800 italic">
   <div className="bg-gradient-to-b from-gray-800 to-black p-8 rounded-lg shadow-cyan-400 shadow-md w-full max-w-md">
     <h2 className="text-2xl font-semibold text-gray-300 mb-4 text-center">Let's Talk</h2>
     <form action="https://getform.io/f/bejjkmna" method="POST" className="space-y-6">

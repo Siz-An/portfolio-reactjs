@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div
       name="home"
-      className="h-screen bg-gradient-to-b from-black to-gray-800"
+      className="h-screen bg-gradient-to-b from-black to-gray-800 italic"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row md:gap-5 ">
         {/* Left Section */}
@@ -18,11 +18,11 @@ export default function Home() {
           animate={{ x: 0, opacity: 1 }} // Set to visible
           transition={{ duration: 1.2, ease: "easeOut" }} // Smooth transition
         >
-          <h2 className="text-4xl sm:text-6xl font-bold text-white mb-4">
-            <span className='font-nonsig'>Full~Stack</span> <span className="text-blue-600 font-sigs">Developer</span>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+            <span className='font-nonsig italic'>Full ~ Stack</span> <span className="text-blue-600 font-sigs italic">Developer</span>
           </h2>
 
-          <p className="text-lg sm:text-xl text-gray-400 mb-6">
+          <p className="text-lg sm:text-xl text-gray-400 mb-6 italic">
             I am a full stack developer with expertise in{" "}
             <span className="text-blue-600 font-bold">Laravel</span>,{" "}
             <span className="text-green-400 font-bold">React</span>,{" "}
