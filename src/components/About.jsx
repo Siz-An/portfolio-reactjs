@@ -1,32 +1,29 @@
-import React from 'react'
+import React from 'react';
 
-function About() {
+export default function About() {
   return (
-    <div name='about' className=' h-screen bg-gradient-to-b from-gray-800  to-black text-white'>
-        <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-            <div className='pb-8'>
-                <p className='text-4xl font-bold font-nonsig inline border-b-4 border border-gray-500'>About -</p>
-
-            </div>
-            <p className='text-xl mt-20'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                 Inventore, perspiciatis pariatur beatae animi vel amet iste
-                  voluptatibus, iure earum doloribus minus porro totam laudantium, 
-                  maiores unde nam temporibus quibusdam esse fuga facere est. 
-                  Fugit facilis, ea sint blanditiis explicabo est quibusdam commodi
-                 quam laudantium atque dolorem architecto maxime officiis rerum.</p>
-                 <br />
-                 <p text-xl>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Quo autem voluptates in neque soluta officia distinctio facere 
-                     enim rerum accusamus, sequi eaque, impedit eligendi quos pariatur 
-                     explicabo? Similique dolore voluptas nam aliquam itaque vero fuga 
-                     architecto in praesentium. Quasi enim quisquam sequi
-                     itaque reprehenderit recusandae saepe corrupti nulla, fugiat fugit?</p>
+    <div name="about" className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-gray-200">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-blue-600">
+            About
+          </p>
         </div>
-
+        <div>
+          <p className="text-xl mt-4 text-gray-300 leading-relaxed">
+            Hi, I’m <span className="text-blue-500 font-semibold">Sizan Mahato</span>! <br /><br />
+            I’m a full stack developer with a passion for creating innovative, user-friendly, and visually stunning digital experiences. With expertise in 
+            <span className="text-green-400"> React.js</span>, 
+            <span className="text-blue-400"> Laravel</span>, 
+            <span className="text-yellow-400"> Flutter</span>, and 
+            <span className="text-orange-500"> Firebase</span>, I excel at turning ideas into seamless applications that are as functional as they are beautiful.
+            <br /><br />
+            At the core of my work is a blend of creativity and technology. Whether it's designing intuitive interfaces, developing dynamic web applications, or ensuring robust backend solutions, I strive to push boundaries and exceed expectations in every project.
+            <br /><br />
+            Let’s collaborate and build something exceptional together!
+          </p>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
-
-export default About

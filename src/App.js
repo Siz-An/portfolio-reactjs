@@ -1,13 +1,12 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-import Home from "./components/home";
 import NavBar from "./components/NavBar";
-import Portfolio from "./components/Portfolio";
+import Home from "./components/Home";
 import SocialLinks from "./components/SocialLinks";
-
-
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Experiences from "./components/Experiences";
+import Contact from "./components/Contact";
 function App() {
+
   return (
     <div>
       <NavBar/>
@@ -15,10 +14,12 @@ function App() {
       <SocialLinks/>
       <About/>
       <Portfolio/>
-      <Experience/>
+      <Experiences/>
       <Contact/>
 
- 
+
+
+
     </div>
   );
 }

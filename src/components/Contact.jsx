@@ -1,54 +1,59 @@
 import React from 'react'
 
-const Contact = () => {
+export default function Contact() {
   return (
-<div name='contact' className='bg-gradient-to-b from-black to-gray-800 text-white py-4'>
-
-
-<div class="max-w-md mx-auto relative overflow-hidden z-10 bg-gray-800 p-8 rounded-lg shadow-md before:w-24 before:h-24 before:absolute before:bg-purple-600 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute 
-  after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12 py-6">
-  <h2 class="text-2xl font-bold text-white mb-6">Let's Chat</h2>
-
-  <form method="post" action="https://getform.io/f/bejjkmna">
-    <div class="mb-4">
-      <label class="block text-sm font-medium text-gray-300" for="name"
-        >Full Name</label>
-      <input class="mt-1 p-2 w-full bg-gray-700 border border-gray-600 rounded-md text-white"
-        type="text" name='name'/>
-    </div>
-
-    <div class="mb-4">
-      <label class="block text-sm font-medium text-gray-300" for="email"
-        >Email Address</label>
-      <input
-        class="mt-1 p-2 w-full bg-gray-700 border border-gray-600 rounded-md text-white"
-        name="email"
-        type="email"
-      />
-    </div>
-
-    <div class="mb-4">
-      <label class="block text-sm font-medium text-gray-300" for="bio">Message</label>
-      <textarea
-        class="mt-1 p-2 w-full bg-gray-700 border border-gray-600 rounded-md text-white"
-        rows="3"
-        name="message"
-        id="message"></textarea>
-    </div>
-
-    <div class="flex justify-end">
-      <button
-        class="bg-gradient-to-r from-purple-600 via-purple-400 to-blue-500 text-white px-4 py-2 font-bold rounded-md hover:opacity-80"
-        type="submit">
-        Send Message
-      </button>
-    </div>
-  </form>
-</div>
-
+  
+<div name="contact" className="flex justify-center items-center min-h-screen bg-gradient-to-b from-black to-gray-800 ">
+  <div className="bg-gradient-to-b from-gray-800 to-black p-8 rounded-lg shadow-cyan-400 shadow-md w-full max-w-md">
+    <h2 className="text-2xl font-semibold text-gray-300 mb-4 text-center">Let's Talk</h2>
+    <form action="https://getform.io/f/bejjkmna" method="POST" className="space-y-6">
+      <div>
+        <label htmlFor="Name" className="block text-sm font-medium text-gray-300 mb-1">
+          Name
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your Name"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+        />
+      </div>
+      <div>
+        <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+          Email
+        </label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+        />
+      </div>
+      <div>
+        <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Leave your message here"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+        ></textarea>
+      </div>
+      <div>
+        <button
+          type="submit"
+          className="w-full bg-gradient-to-r from-cyan-400 to-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
 </div>
 
   )
 }
-
-export default Contact

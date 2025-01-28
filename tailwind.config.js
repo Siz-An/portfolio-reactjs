@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       signature: ["Great Vibes"],
       nonsig: ["EB Garamond"],
+      sigs: ["Playfair"],
     },
   },
   plugins: [],
