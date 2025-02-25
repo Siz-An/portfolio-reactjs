@@ -19,7 +19,7 @@ export default function Home() {
           transition={{ duration: 1.2, ease: "easeOut" }} // Smooth transition
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            <span className='font-nonsig italic'>Flutter~Firebase</span> <span className="text-blue-600 font-sigs italic">Developer</span>
+            <span className='font-nonsig italic'>Flutter</span> <span className="text-blue-600 font-sigs italic">Developer</span>
           </h2>
 
           <p className="text-lg sm:text-xl text-gray-400 mb-6 italic">
