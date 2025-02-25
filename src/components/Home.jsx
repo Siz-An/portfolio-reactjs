@@ -23,10 +23,10 @@ export default function Home() {
           </h2>
 
           <p className="text-lg sm:text-xl text-gray-400 mb-6 italic">
-            I am a full stack developer with expertise in{" "}
-            <span className="text-blue-600 font-bold">Laravel</span>,{" "}
-            <span className="text-green-400 font-bold">React</span>,{" "}
-            <span className="text-yellow-400 font-bold">Flutter</span>,{" "}
+            I am a Flutter developer with expertise in{" "}
+            <span className="text-blue-600 font-bold">Flutter</span>,{" "}
+            <span className="text-green-400 font-bold">Laravel</span>,{" "}
+            <span className="text-yellow-400 font-bold">React</span>,{" "}
             <span className="text-orange-500 font-bold">MySQL</span>, and{" "}
             <span className="text-blue-500 font-bold">Firebase</span>. Passionate
             about creating dynamic, user-friendly web and mobile applications.
