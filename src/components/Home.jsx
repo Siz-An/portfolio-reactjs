@@ -19,11 +19,11 @@ export default function Home() {
           transition={{ duration: 1.2, ease: "easeOut" }} // Smooth transition
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            <span className='font-nonsig italic'>Flutter</span> <span className="text-blue-600 font-sigs italic">Developer</span>
+            <span className='font-nonsig italic'>Full-Stack</span> <span className="text-blue-600 font-sigs italic">Developer</span>
           </h2>
 
           <p className="text-lg sm:text-xl text-gray-400 mb-6 italic">
-            I am a Flutter developer with expertise in{" "}
+            I am a Full-Stack developer with expertise in{" "}
             <span className="text-blue-600 font-bold">Flutter</span>,{" "}
             <span className="text-green-400 font-bold">Laravel</span>,{" "}
             <span className="text-yellow-400 font-bold">React</span>,{" "}
