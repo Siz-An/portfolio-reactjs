@@ -17,9 +17,6 @@ function App() {
       <Experiences/>
       <Contact/>
 
-
-
-
     </div>
   );
 }

@@ -24,11 +24,11 @@ export default function Home() {
 
           <p className="text-lg sm:text-xl text-gray-400 mb-6 italic">
             I am a Full-Stack developer with expertise in{" "}
-            <span className="text-blue-600 font-bold">Flutter</span>,{" "}
-            <span className="text-green-400 font-bold">Laravel</span>,{" "}
-            <span className="text-yellow-400 font-bold">React</span>,{" "}
+            <span className="text-red-600 font-bold">Laravel</span>,{" "}
+            <span className="text-blue-400 font-bold">Flutter</span>,{" "}
+            <span className="text-blue-400 font-bold">React</span>,{" "}
             <span className="text-orange-500 font-bold">MySQL</span>, and{" "}
-            <span className="text-blue-500 font-bold">Firebase</span>. Passionate
+            <span className="text-yellow-500 font-bold">Firebase</span>. Passionate
             about creating dynamic, user-friendly web and mobile applications.
           </p>
 

@@ -6,7 +6,7 @@ export default function Contact() {
 <div name="contact" className="flex justify-center items-center min-h-screen bg-gradient-to-b from-black to-gray-800 italic">
   <div className="bg-gradient-to-b from-gray-800 to-black p-8 rounded-lg shadow-cyan-400 shadow-md w-full max-w-md">
     <h2 className="text-2xl font-semibold text-gray-300 mb-4 text-center">Let's Talk</h2>
-    <form action="https://getform.io/f/bejjkmna" method="POST" className="space-y-6">
+    <form action="https://formspree.io/f/myzwvnbz" method="POST" className="space-y-6">
       <div>
         <label htmlFor="Name" className="block text-sm font-medium text-gray-300 mb-1">
           Name
