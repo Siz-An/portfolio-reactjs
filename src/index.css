@@ -1,12 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  html{
-    font-family: 'Raleway','Playfair',sans-serif;
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Custom Portfolio Theme - Dark Only */
+    --background: 240 20% 3%;
+    --foreground: 240 10% 95%;
+    
+    --card: 240 15% 6%;
+    --card-foreground: 240 10% 95%;
+    
+    --popover: 240 15% 6%;
+    --popover-foreground: 240 10% 95%;
+    
+    --primary: 194 100% 69%;
+    --primary-foreground: 240 20% 5%;
+    
+    --secondary: 271 91% 65%;
+    --secondary-foreground: 240 10% 95%;
+    
+    --muted: 237 16% 45%;
+    --muted-foreground: 240 10% 70%;
+    
+    --accent: 271 91% 65%;
+    --accent-foreground: 240 10% 95%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 240 10% 95%;
+    
+    --border: 240 15% 10%;
+    --input: 240 15% 10%;
+    --ring: 194 100% 69%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(240 15% 8%));
+    --gradient-glow: radial-gradient(circle at center, hsl(var(--primary) / 0.15), transparent 60%);
+    --gradient-mesh: conic-gradient(from 0deg at 50% 50%, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.1), hsl(var(--accent) / 0.1), hsl(var(--primary) / 0.1));
+    
+    /* Animation variables */
+    --transition-all: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-colors: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    --spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }
