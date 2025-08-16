@@ -15,7 +15,7 @@ const Experience = () => {
       title: "Jr. Laravel Developer", 
       company: "Green Computing Nepal",
       location: "Kathmandu",
-      period: "Feb, 2025 - Current",
+      period: "Feb, 2025 - May, 2025",
       description: [
         "Developed a Laravel-based CRM system integrated with a React frontend.",
         "Designed and optimized MySQL databases, ensuring efficient data handling.",
