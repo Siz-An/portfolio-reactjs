@@ -4,111 +4,145 @@ import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 
 // Import project images
-import ecommerceImg from '@/assets/ecommerce-project.jpg';
-import portfolioImg from '@/assets/portfolio-project.jpg';
-import inventoryImg from '@/assets/inventory-project.jpg';
-import chatAppImg from '@/assets/chat-app-project.jpg';
-import taskManagerImg from '@/assets/task-manager-project.jpg';
-import schoolSystemImg from '@/assets/school-system-project.jpg';
-import weatherAppImg from '@/assets/weather-app-project.jpg';
-import blogPlatformImg from '@/assets/blog-platform-project.jpg';
-import fitnessAppImg from '@/assets/fitness-app-project.jpg';
-import restaurantImg from '@/assets/restaurant-project.jpg';
+// Make sure the file exists at this path and with the correct extension (e.g., .png or .jpg)
+import crm from '@/assets/img/crm.png';
+import ecommerce from '@/assets/img/ecom.png';
+import edo from '@/assets/img/edo.png';
+import erp from '@/assets/img/erp.png';
+import expense from '@/assets/img/expense.png';
+import flappy from '@/assets/img/flappy3.png';
+import freelance from '@/assets/img/freelance.png';
+import futsal from '@/assets/img/futsal.png';
+import hotelbook from '@/assets/img/hotelbook.png';
+import lms from '@/assets/img/lms.png';
+import portfolio from '@/assets/img/portfolio.png';
+import travel from '@/assets/img/travel.png';
+import watch from '@/assets/img/watch.png';
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
 
   const projects = [
     {
-      title: "E-Commerce Web App",
-      summary: "A full-featured Laravel + React based online store with payment integration.",
-      tech: ["Laravel", "React", "MySQL", "Stripe API"],
-      imageAlt: "E-Commerce dashboard preview",
-      image: ecommerceImg,
-      links: { live: "#", repo: "#" },
-      category: "Full Stack"
-    },
-    {
-      title: "Portfolio Website",
-      summary: "Personal branding site with dark mode and custom animations.",
-      tech: ["React", "Tailwind CSS", "Framer Motion"],
-      imageAlt: "Portfolio homepage preview",
-      image: portfolioImg,
+      title: "E-commerce Website (Watch Store)",
+      summary: "A modern e-commerce website for watches with Firebase backend.",
+      tech: ["React", "Firebase"],
+      imageAlt: "Watch e-commerce preview",
+      image: watch,
       links: { live: "#", repo: "#" },
       category: "Frontend"
     },
     {
-      title: "Inventory Management System",
-      summary: "A Laravel application for managing products, stock, and suppliers.",
-      tech: ["Laravel", "MySQL", "Bootstrap"],
-      imageAlt: "Inventory dashboard preview",
-      image: inventoryImg,
+      title: "Travel Booking Website",
+      summary: "A travel booking website built with React.",
+      tech: ["React"],
+      imageAlt: "Travel booking website preview",
+      image: travel,
+      links: { live: "#", repo: "#" },
+      category: "Frontend"
+    },
+
+    {
+      title: "Hotel Booking App",
+      summary: "A hotel booking web app using React and Firebase.",
+      tech: ["React", "Firebase"],
+      imageAlt: "Hotel booking app preview",
+      image: hotelbook,
+      links: { live: "#", repo: "#" },
+      category: "Frontend"
+    },
+
+    {
+      title: "Consultancy Home Page",
+      summary: "A consultancy company homepage built with Laravel.",
+      tech: ["Laravel"],
+      imageAlt: "Consultancy homepage preview",
+      image: edo,
+      links: { live: "#", repo: "#" },
+      category: "Backend"
+    },
+
+    {
+      title: "ERP Software",
+      summary: "Enterprise Resource Planning software built with Laravel.",
+      tech: ["Laravel"],
+      imageAlt: "ERP software preview",
+      image: erp,
       links: { live: "#", repo: "#" },
       category: "Backend"
     },
     {
-      title: "Flutter Chat App",
-      summary: "A real-time chat application using Flutter and Firebase.",
+      title: "Library Management App",
+      summary: "A library management mobile app built with Flutter and Firebase.",
       tech: ["Flutter", "Firebase"],
-      imageAlt: "Chat app UI preview",
-      image: chatAppImg,
+      imageAlt: "Library management app preview",
+      image: lms,
       links: { live: "#", repo: "#" },
       category: "Mobile"
     },
     {
-      title: "Task Manager",
-      summary: "Task tracking web app with drag-and-drop interface.",
-      tech: ["React", "Tailwind CSS", "Firebase"],
-      imageAlt: "Task board preview",
-      image: taskManagerImg,
-      links: { live: "#", repo: "#" },
-      category: "Frontend"
-    },
-    {
-      title: "School Management System",
-      summary: "Manages students, teachers, and schedules.",
-      tech: ["Laravel", "MySQL", "Bootstrap"],
-      imageAlt: "School system dashboard preview",
-      image: schoolSystemImg,
+      title: "CRM System",
+      summary: "A customer relationship management system for tracking leads and sales.",
+      tech: ["React", "Laravel", "MySQL"],
+      imageAlt: "CRM dashboard preview",
+      image: crm,
       links: { live: "#", repo: "#" },
       category: "Full Stack"
     },
     {
-      title: "Weather App",
-      summary: "Displays weather forecasts with location search.",
-      tech: ["React", "Tailwind CSS", "OpenWeather API"],
-      imageAlt: "Weather forecast preview",
-      image: weatherAppImg,
-      links: { live: "#", repo: "#" },
-      category: "Frontend"
-    },
-    {
-      title: "Blog Platform",
-      summary: "A blogging CMS built with Laravel and Tailwind.",
-      tech: ["Laravel", "Tailwind CSS", "MySQL"],
-      imageAlt: "Blog listing preview",
-      image: blogPlatformImg,
+      title: "E-commerce Website",
+      summary: "An e-commerce website for selling tech products.",
+      tech: ["React", "Laravel", "MySQL"],
+      imageAlt: "E-commerce dashboard preview",
+      image: ecommerce,
       links: { live: "#", repo: "#" },
       category: "Full Stack"
     },
     {
-      title: "Fitness Tracker App",
-      summary: "Track workouts, diet, and progress in one place.",
-      tech: ["React", "Tailwind CSS", "Firebase"],
-      imageAlt: "Fitness dashboard preview",
-      image: fitnessAppImg,
+      title: "Expense Tracker",
+      summary: "A mobile app to track expenses using Flutter and Firebase.",
+      tech: ["Flutter", "Firebase"],
+      imageAlt: "Expense tracker app preview",
+      image: expense,
+      links: { live: "#", repo: "#" },
+      category: "Mobile"
+    },
+    {
+      title: "Flappy Bird Game",
+      summary: "A Flappy Bird clone game built with Flutter.",
+      tech: ["Flutter"],
+      imageAlt: "Flappy Bird game preview",
+      image: flappy,
+      links: { live: "#", repo: "#" },
+      category: "Mobile"
+    },
+    {
+      title: "Freelance Platform",
+      summary: "A freelance platform frontend built with React.",
+      tech: ["React"],
+      imageAlt: "Freelance platform preview",
+      image: freelance,
       links: { live: "#", repo: "#" },
       category: "Frontend"
     },
     {
-      title: "Restaurant Ordering System",
-      summary: "Online ordering and table booking platform.",
-      tech: ["Laravel", "React", "MySQL"],
-      imageAlt: "Restaurant app UI preview",
-      image: restaurantImg,
+      title: "Futsal Booking App",
+      summary: "A futsal ground booking app using Flutter and Firebase.",
+      tech: ["Flutter", "Firebase"],
+      imageAlt: "Futsal booking app preview",
+      image: futsal,
       links: { live: "#", repo: "#" },
-      category: "Full Stack"
-    }
+      category: "Mobile"
+    },
+    {
+      title: "Portfolio Website",
+      summary: "Personal portfolio website with React and animations.",
+      tech: ["React"],
+      imageAlt: "Portfolio website preview",
+      image: portfolio,
+      links: { live: "#", repo: "#" },
+      category: "Frontend"
+    },
   ];
 
   const categories = ['All', 'Full Stack', 'Frontend', 'Backend', 'Mobile'];
