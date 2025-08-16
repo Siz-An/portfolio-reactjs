@@ -197,7 +197,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="bg-background/50 border-border focus:border-primary transition-colors duration-300"
-                    placeholder=""
+                    placeholder="......."
                   />
                 </motion.div>
                 <motion.div
@@ -216,7 +216,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="bg-background/50 border-border focus:border-primary transition-colors duration-300"
-                    placeholder=""
+                    placeholder="...@example.com"
                   />
                 </motion.div>
               </div>
